@@ -6,7 +6,18 @@ function deObjetoAarray(objeto) {
   // Estos elementos debe ser cada par clave:valor del objeto recibido.
   // [EJEMPLO]: {D: 1, B: 2, C: 3} ---> [['D', 1], ['B', 2], ['C', 3]].
   // Tu código:
+  sAlida = [];
+  objeto.forEach((value, property) => {
+    sAlida.push(`${property}, ${value}`);
+  });
+  // for(const Pr in objeto){
+  //   sAlida.push(Pr,);
+  // }
 }
+
+const Persona = { name: "Jhon", edad: 25, ojos: "marron" }
+console.log(deObjetoAarray(Persona));
+
 
 function numberOfCharacters(string) {
   // La función recibe un string. Debes recorrerlo y retornar un objeto donde cada propiedad es una de las

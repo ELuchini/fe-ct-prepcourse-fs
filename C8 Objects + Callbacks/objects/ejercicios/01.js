@@ -7,4 +7,12 @@ const obtenerValorPropiedad = (objeto, propiedad) => {
    return a;
 };
 
+T= {
+   TIPO: "ANIMALES",
+   COLOR: "ANIMAL SPRINT"
+}
+
+console.log(obtenerValorPropiedad(T,"COLOR"));
+
+
 module.exports = obtenerValorPropiedad;
